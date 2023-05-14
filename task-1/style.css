@@ -1,25 +1,26 @@
-*,*:before,*:after{
+*, *:before, *:after {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     height: 100%;
 }
-.flags{
+
+.flags {
 
 }
 
-.block{
+.block {
     padding: 50px;
     max-width: 1170px;
     margin: 0px auto;
 }
 
-.block_item{
-   margin: 30px;
+.block_item {
+    margin: 30px;
 }
 
 .flag_1 {
@@ -37,11 +38,37 @@ html,body{
 
 .flag_2::after {
     position: absolute;
-    top: 40px; left: 90px;
+    top: 40px;
+    left: 90px;
 
-    display: block; content: "";
-    height: 120px; width: 120px;
+    display: block;
+    content: "";
+    height: 120px;
+    width: 120px;
 
     background-color: #ED2939;
     border-radius: 50%;
+}
+
+.flag_3 {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(135deg, antiquewhite, silver);
+    border: solid 1px black;
+}
+
+.flag_3 {
+    background: linear-gradient(to right, transparent 35%, red 35%, red 45%, transparent 45%),
+    linear-gradient(to bottom, transparent 45%, red 45%, red 60%, transparent 60%),
+    linear-gradient(to right, transparent 45%, white 45%, white 50%, transparent 50%),
+    linear-gradient(to right, transparent 30%, white 30%, white 35%, transparent 35%),
+    linear-gradient(to bottom, transparent 60%, white 60%, white 65%, transparent 65%),
+    linear-gradient(to bottom, transparent 40%, white 40%, white 45%, transparent 45%),
+    blue;
+}
+
+.flag_4 {
+    width: 300px;
+    height: 200px;
+    background-color: darkred;
 }
