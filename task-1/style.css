@@ -19,12 +19,29 @@ html,body{
 }
 
 .block_item{
-   margin: 0px 30px;
+   margin: 30px;
 }
 
 .flag_1 {
     width: 300px;
-    height: 150px;
+    height: 200px;
     background: linear-gradient(blue 50%, yellow 50%);
 }
 
+.flag_2 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: solid 1px black;
+}
+
+.flag_2::after {
+    position: absolute;
+    top: 40px; left: 90px;
+
+    display: block; content: "";
+    height: 120px; width: 120px;
+
+    background-color: #ED2939;
+    border-radius: 50%;
+}
